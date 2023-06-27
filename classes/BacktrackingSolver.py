@@ -44,15 +44,3 @@ class BacktrackingSolver:
                     return True
                 self.board[row][col] = 0
         return False
-
-    def print_board(self):
-        for row in range(9):
-            if row % 3 == 0 and row != 0:
-                print("- - - - - - - - - - - - - - ")
-            for col in range(9):
-                if col % 3 == 0 and col != 0:
-                    print(" | ", end="")
-                if col == 8:
-                    print(self.board[row][col])
-                else:
-                    print(str(self.board[row][col]) + " ", end="")
